@@ -1,0 +1,296 @@
+/* seteo tipo de letras */
+
+* {
+
+    font-family: 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* seteo nav para hacer cabecera */
+
+#cabecera {
+
+
+    background: rgb(243, 243, 243);
+    background: linear-gradient(0deg, rgba(243, 243, 243, 1) 25%, rgba(72, 72, 75, 1) 1%);
+    flex-direction: column;
+}
+
+
+/* setting pestañas desde los controles de boostrap */
+
+#navbarTogglerDemo02 {
+
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(131, 19, 19, 0.7);
+    --bs-navbar-nav-link-padding-x: 5rem;
+    --bs-navbar-toggler-padding-y: 2rem;
+
+}
+
+/* seteo pestañas */
+
+.nav-item {
+
+    --bs-nav-link-padding-x: -5.5rem;
+
+}
+
+div ul {
+
+    font-weight: 450;
+    text-decoration: solid;
+    column-gap: 10vw;
+    justify-content: space-around
+}
+
+/* seteo botonera en modo hamburguesa */
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0.5em;
+
+}
+
+/* ajustes del main */
+
+
+.flex-container {
+
+    max-height: fit-content;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding-bottom: 5em;
+    padding-top: 2.5em;
+
+}
+
+
+/* intento de Background image fallido - pemdiente */
+
+/* .bg-image{
+
+    background-image: url ("c:\Users\Usuario\Downloads\45403006_eps.png"); height: 100px; 
+} */
+
+.flex-container div {
+
+    line-height: 1.5em;
+    text-indent: 1em;
+    text-align: center;
+    margin: 1.5rem 1.5rem;
+    flex-basis: content;
+
+}
+
+@media (min-width: 850px) {
+
+    .flex-container {
+
+        flex-direction: row;
+
+    }
+}
+
+/* ajustes generales */
+
+.text-left {
+
+    text-align: left;
+
+}
+
+.text-right {
+
+    text-align: right;
+
+}
+
+.text-center {
+
+    text-align: center;
+
+}
+
+.text-justify {
+
+    text-align: justify;
+
+}
+
+
+.text-bold {
+
+    font-weight: 100px;
+}
+
+#caption{
+    
+    line-height: 1.5em;
+    font: bolder;
+    color: beige;
+}
+
+#color {
+
+    background-color: rgb(243, 243, 243)
+}
+
+h2 {
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.8em;
+
+
+}
+
+h3 {
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+
+h5{
+
+padding-top: 1em;
+padding-bottom: 0.1em;
+
+}
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+   
+  
+}
+
+#aside {
+
+    margin-top: 8%;
+    margin-bottom: 8%; 
+    
+
+}
+
+
+/* Resalto de parrafo en main*/
+
+.justify {
+
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+
+}
+
+
+/* Ajustes carousel */
+
+
+#media{
+
+    align-items: center;
+    background-color: rgba(167, 182, 177, 0.299);
+
+}
+
+
+.grid {
+
+    display:flex;
+    width: auto;
+    background-color: rgba(167, 182, 177, 0.299);
+    column-gap:10em;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5%;
+    
+}
+
+
+
+
+.m-auto{
+    
+    padding: 1%;
+    width: 450px;
+    height: 550px;
+    background-color: black;
+    align-content: center;
+    vertical-align: middle;
+
+
+}
+
+
+@media (max-width: 750px) {
+
+    .grid {
+        flex-direction: column;
+        
+    }
+}
+
+
+.justify-items{
+
+    justify-items: center;
+
+}
+
+.align-items{
+
+    align-items: center;
+
+}
+
+
+/* snipet para el footer */
+
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+footer {
+
+    background-color: rgb(160, 158, 158);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around
+}
+
+/* footer ajuste row */
+
+footer div {
+    padding-top: 6px
+}
+
+footer a :hover {
+
+    transform: scale(1.2, 1.2);
+    margin-bottom: 1px;
+
+
+}
+
+
+/* ajustes de footer */
