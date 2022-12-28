@@ -2,18 +2,19 @@
 
 * {
 
-    font-family: 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 /* seteo nav para hacer cabecera */
 
 #cabecera {
 
-
-    background: rgb(243, 243, 243);
+    background: rgb(242, 242, 241);
     background: linear-gradient(0deg, rgba(243, 243, 243, 1) 25%, rgba(72, 72, 75, 1) 1%);
     flex-direction: column;
+
 }
 
 
@@ -70,13 +71,6 @@ div ul {
 }
 
 
-/* intento de Background image fallido - pemdiente */
-
-/* .bg-image{
-
-    background-image: url ("c:\Users\Usuario\Downloads\45403006_eps.png"); height: 100px; 
-} */
-
 .flex-container div {
 
     line-height: 1.5em;
@@ -128,8 +122,8 @@ div ul {
     font-weight: 100px;
 }
 
-#caption{
-    
+#caption {
+
     line-height: 1.5em;
     font: bolder;
     color: beige;
@@ -137,7 +131,7 @@ div ul {
 
 #color {
 
-    background-color: rgb(243, 243, 243)
+    background-color: rgb(242, 242, 241)
 }
 
 h2 {
@@ -160,25 +154,24 @@ h3 {
     padding-bottom: 1em;
 }
 
-h5{
+h5 {
 
-padding-top: 1em;
-padding-bottom: 0.1em;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
 
 }
 
-iframe{
+iframe {
     margin-left: auto;
     margin-right: auto;
-   
-  
+
+
 }
 
 #aside {
 
     margin-top: 8%;
-    margin-bottom: 8%; 
-    
+    margin-bottom: 8%;
 
 }
 
@@ -187,7 +180,7 @@ iframe{
 
 .justify {
 
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(242, 242, 241);
     justify-content: center;
 
 }
@@ -196,7 +189,7 @@ iframe{
 /* Ajustes carousel */
 
 
-#media{
+#media {
 
     align-items: center;
     background-color: rgba(167, 182, 177, 0.299);
@@ -206,23 +199,22 @@ iframe{
 
 .grid {
 
-    display:flex;
+    display: flex;
     width: auto;
     background-color: rgba(167, 182, 177, 0.299);
-    column-gap:10em;
+    column-gap: 10em;
     flex-direction: row;
     justify-content: center;
     padding-top: 1.5%;
-    
+    background-color: rgb(242, 242, 241);
 }
 
 
 
+.m-auto {
 
-.m-auto{
-    
     padding: 1%;
-    width: 450px;
+    width: 400px;
     height: 550px;
     background-color: black;
     align-content: center;
@@ -236,22 +228,265 @@ iframe{
 
     .grid {
         flex-direction: column;
-        
+
     }
 }
 
 
-.justify-items{
+.justify-items {
 
     justify-items: center;
 
 }
 
-.align-items{
+.align-items {
 
     align-items: center;
 
 }
+
+/* ajustes para las grillas en tienda */
+
+#tienda {
+
+    font-size: x-small;
+
+
+}
+
+#h1 {
+
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+}
+
+#dog {
+
+    padding-top: 5%;
+    margin-bottom: 0;
+    width: auto;
+    margin: auto;
+
+}
+
+
+/* ajustes para peluqueía */
+
+
+#h1P {
+
+    margin-top: 5%;
+    padding-bottom: 15%;
+    background-color: rgb(242, 242, 241);
+
+}
+
+section h1 {
+
+    margin-top: 10%;
+
+}
+
+
+/* ajustes para reservas */
+
+.reservas {
+
+    padding: 10%;
+    align-content: center;
+
+
+}
+
+.bg-opacity-100 {
+
+    border-radius: 2%;
+    background-image: url(../multimedia/galeria/extras/45403006_eps.png);
+
+
+}
+
+#h1R {
+
+    padding-bottom: 5%;
+
+}
+
+
+/* Comienzo de la animación */
+
+
+.animdog {
+
+
+    left: 11%;
+    position: absolute;
+    background-color: #fdb44e;
+    height: 75px;
+    width: 110px;
+    border-radius: 0px 0px 0px 120px;
+    top: 55%;
+
+}
+
+.bodydog {
+
+    background-color: #fdb44e;
+    height: 90px;
+    width: 180px;
+    position: relative;
+    top: 55px;
+    left: 70px;
+    border-radius: 0px 0px 0px 60px;
+
+}
+
+.ear {
+
+    background-color: rgba(151, 89, 2, 0.8);
+    height: 90px;
+    width: 40px;
+    position: relative;
+    bottom: 390px;
+    left: 70px;
+    border-radius: 0px 0px 100px 10px;
+}
+
+
+.tail {
+
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #fdb44e;
+    bottom: 320px;
+    left: 230px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wag 1s infinite;
+    animation-play-state: running;
+
+
+}
+
+
+.tail:hover {
+
+    animation-play-state: paused;
+}
+
+@keyframes wag {
+
+
+    50% {
+
+        transform: rotate(10deg)
+    }
+
+}
+
+.leg1,
+.leg2,
+.leg3,
+.leg4 {
+
+    background-color: #fdb44e;
+    height: 50px;
+    width: 18px;
+    position: relative;
+    border-radius: 0px 0px 100px 10px;
+
+
+}
+
+.leg1 {
+
+    left: 100px;
+    top: 48px;
+
+}
+
+.leg2 {
+
+    bottom: 2px;
+    left: 130px
+}
+
+.leg3 {
+
+    left: 205px;
+    bottom: 50px;
+    background-color: rgba(151, 89, 2, 0.5);
+    z-index: -1;
+
+}
+
+.leg4 {
+
+    left: 232px;
+    bottom: 100px;
+
+}
+
+
+.nose {
+
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 2.5px;
+    bottom: 492px;
+
+}
+
+.eye {
+
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 490px;
+    left: 50px;
+
+}
+
+
+.tongue {
+
+    background-color: tomato;
+    height: 15px;
+    width: 4px;
+    border-radius: 10px;
+    position: relative;
+    left: 23px;
+    bottom: 465px;
+    rotate: 45deg;
+
+
+}
+
+
+#working {
+    margin-top: 10%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#last {
+
+    margin-top: -50px;
+
+
+
+}
+
+
 
 
 /* snipet para el footer */
@@ -259,18 +494,20 @@ iframe{
 
 html {
     min-height: 100%;
-    position: relative;
+    width: 100%;
+    position: absolute;
 }
 
 body {
     margin: 0;
-    margin-bottom: 40px;
+
 }
 
 footer {
 
+
     background-color: rgb(160, 158, 158);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
@@ -281,14 +518,14 @@ footer {
 /* footer ajuste row */
 
 footer div {
-    padding-top: 6px
+    padding-top: 5px;
+
 }
 
 footer a :hover {
 
     transform: scale(1.2, 1.2);
     margin-bottom: 1px;
-
 
 }
 
