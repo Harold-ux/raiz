@@ -12,34 +12,58 @@
 #cabecera {
 
     background: rgb(242, 242, 241);
-    background: linear-gradient(0deg, rgba(243, 243, 243, 1) 25%, rgba(72, 72, 75, 1) 1%);
+    background: linear-gradient(0deg, rgba(243, 243, 243, 1) 19%, rgba(72, 72, 75, 1) 1%);
     flex-direction: column;
-
-}
-
-
-/* setting pestañas desde los controles de boostrap */
-
-#navbarTogglerDemo02 {
-
-    --bs-navbar-color: rgba(0, 0, 0, 0.55);
-    --bs-navbar-hover-color: rgba(131, 19, 19, 0.7);
-    --bs-navbar-nav-link-padding-x: 5rem;
-    --bs-navbar-toggler-padding-y: 2rem;
 
 }
 
 /* seteo pestañas */
 
-.nav-item {
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin-bottom: -0.6rem !important;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.2em;
+    padding-top: 2%;
 
-    --bs-nav-link-padding-x: -5.5rem;
 
 }
 
+a.nav-link {
+    height: 3vh;
+
+}
+
+a {
+    color: rgb(5, 50, 135);
+    text-decoration: none;
+
+}
+
+.btn {
+    background-color: rgb(220,224,222);
+    border: none;
+    padding: -2px -1px;
+    text-align: center;
+    font-size: 1em;
+    margin: 1px 1.5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d3d9df;
+    color: rgb(141, 130, 130);
+
+}
+
+div#navbarTogglerDemo02 {
+    font-size: small;
+}
+
+
 div ul {
 
-    font-weight: 450;
+    text-align: center;
     text-decoration: solid;
     column-gap: 10vw;
     justify-content: space-around
@@ -57,16 +81,12 @@ div ul {
 
 /* ajustes del main */
 
-
 .flex-container {
 
     max-height: fit-content;
-    margin: 2%;
+    margin: 2.5%;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
-    padding-bottom: 5em;
-    padding-top: 2.5em;
 
 }
 
@@ -76,7 +96,7 @@ div ul {
     line-height: 1.5em;
     text-indent: 1em;
     text-align: center;
-    margin: 1.5rem 1.5rem;
+    margin: 2.5%;
     flex-basis: content;
 
 }
@@ -90,7 +110,9 @@ div ul {
     }
 }
 
+
 /* ajustes generales */
+
 
 .text-left {
 
@@ -116,7 +138,6 @@ div ul {
 
 }
 
-
 .text-bold {
 
     font-weight: 100px;
@@ -129,9 +150,16 @@ div ul {
     color: beige;
 }
 
-#color {
+#colorH {
 
     background-color: rgb(242, 242, 241)
+}
+
+h1 {
+
+    font-size: xx-large;
+
+
 }
 
 h2 {
@@ -162,6 +190,7 @@ h5 {
 }
 
 iframe {
+
     margin-left: auto;
     margin-right: auto;
 
@@ -170,8 +199,8 @@ iframe {
 
 #aside {
 
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 
 }
 
@@ -202,9 +231,9 @@ iframe {
     display: flex;
     width: auto;
     background-color: rgba(167, 182, 177, 0.299);
-    column-gap: 10em;
+    column-gap: 5em;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 1.5%;
     background-color: rgb(242, 242, 241);
 }
@@ -214,8 +243,8 @@ iframe {
 .m-auto {
 
     padding: 1%;
-    width: 400px;
-    height: 550px;
+    width: 300px;
+    height: 480px;
     background-color: black;
     align-content: center;
     vertical-align: middle;
@@ -227,6 +256,7 @@ iframe {
 @media (max-width: 750px) {
 
     .grid {
+
         flex-direction: column;
 
     }
@@ -245,12 +275,23 @@ iframe {
 
 }
 
+/* ajustes del mapa */
+
+
+.mobile {
+
+    width: auto;
+    height: 100px;
+    margin-top: 1%;
+}
+
+
+
 /* ajustes para las grillas en tienda */
 
 #tienda {
 
     font-size: x-small;
-
 
 }
 
@@ -269,7 +310,6 @@ iframe {
     margin: auto;
 
 }
-
 
 /* ajustes para peluqueía */
 
@@ -485,8 +525,6 @@ section h1 {
 
 
 }
-
-
 
 
 /* snipet para el footer */

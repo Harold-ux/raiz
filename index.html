@@ -21,6 +21,7 @@
 
 <body class="p-0 m-0 border-0">
 
+
     <!-- inicia cabecera y enlaces internos -->
 
     <section>
@@ -36,7 +37,7 @@
 
                     <!-- boton hambuerguesa -->
 
-                    <button id="color" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button id="colorH" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <img= class="navbar-toggler-icon" src="multimedia/galeria/extras/bars-solid.svg">
@@ -54,16 +55,17 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="vistas html/Tienda.html"><br>TIENDA</a>
+                            <button class="btn"><a href="vistas html/Tienda.html">TIENDA</a></button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="vistas html/Peluquería.html"><br>PELUQUERÍA</a>
+                            <button class="btn"><a href="vistas html/Peluquería.html">PELUQUERÍA</a>
+                            </button>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="vistas html/Reservas.html"><br>RESERVA</a>
+                        <li>
+                            <button class="btn"><a href="vistas html/Reservas.html">RESERVA</a>
+                            </button>
                         </li>
 
                     </ul>
@@ -88,13 +90,12 @@
                 <h1><br> BIENVENIDOS </h1>
 
 
-
             </div>
 
             <div>
 
                 <span><br></span>
-
+                <span><br></span>
 
                 Nos especializamos en el buen trato y atención de su mascota, es por esto que hemos
                 implementado un sistema de reserva de hora. Con el propósito de dar el espacio y tiempo
@@ -107,7 +108,7 @@
                 <span><br></span>
 
 
-                Ofrecemos una gama de productos de alta gama en el mercado y nos esforzamos por tener el
+                Ofrecemos productos de alta gama en el mercado y nos esforzamos por tener el
                 personal
                 adecuado para brindar dicho servicio. Contamos con el personal a disposición y certificados con
                 la
@@ -144,7 +145,7 @@
 
             <div class="grid">
 
-                <div>
+                <div class="col-sm-12 col.md.6 col-lg-3">
 
                     <div id="media" class="carousel slide img-thumbnail">
 
@@ -168,10 +169,22 @@
 
                         <div class="carousel-inner m-auto container">
 
-                            <div class="row carousel-item active mx-auto my-md-3">
+                            <div class="row carousel-item active mx-auto my-md-3 text-center">
 
                                 <img src="multimedia/galeria/canes/Ramses/Ramses.425273.webp" class="img-fluid"
                                     alt="Acariciando a perro en mesa grooming previo al corte">
+
+
+                                <span id="caption">
+
+                                    <span><span><br></span></span>
+                                    <span>(Ramses)</span>
+
+
+
+                                </span>
+
+
                             </div>
 
                             <div class="carousel-item align-middle">
@@ -209,8 +222,9 @@
                                     <span><br></span>
                                     <span><br></span>
 
-                                    Aquí está como queeee... bueeeno.. al menos ahí.. vamos... ¨/\¨
-                                    de a poco ... (está con ganas de descansar parece)</span>
+                                    Aquí está como queeee... bueeeno.. al menos ahí vamos... ¨/\¨
+                                    de a poco ...
+                                    <br>(está con ganas de descansar parece)</span>
 
                             </div>
 
@@ -233,7 +247,8 @@
                                     <span><br></span>
                                     <span><br></span>
 
-                                   Así quedó el gruñón jaj.. <br> La dueña le dijo confianzudo .. <br> después, como que ya no se quería ír <br>♥</span>
+                                    Así quedó el gruñón jaj.. <br> La dueña le dijo confianzudo .. <br> después, como
+                                    que ya no se quería ír <br>♥</span>
                             </div>
 
                         </div>
@@ -253,7 +268,7 @@
                     </div>
                     <div>
 
-                        <h2>Destacados (Ramses)</h2>
+                        <h2><span>Destacados</span></h2>
 
                     </div>
 
@@ -273,19 +288,29 @@
 
                 <div>
 
-                    <div class="grid img-thumbnail">
+                    <div id="media" class="grid img-thumbnail">
 
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6106.394167275056!2d-70.64214954207034!3d-33.43537191313607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbb70dc2cbdce1b0!2sParque%20Forestal!5e0!3m2!1ses-419!2scl!4v1672154744202!5m2!1ses-419!2scl"
-                            width="400" height="550" allowfullscreen=" padding-top=0" loading="lazy"
+                            width="mx-auto" height="480" allowfullscreen=" padding-top=0" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
 
                     </div>
 
-                    <div class="text-center">
-                        <h5>Ubícanos</h5>(Todas las semanas)
+                    <div class="text-center mobile">
+
+                        <h2>
+
+                            Ubícanos
+
+                        </h2>
+
+                        <span class="t-small">(Todas las semanas)</span>
+
+
                     </div>
+
 
                 </div>
 
@@ -309,20 +334,19 @@
             <div> Haz click</div>
 
             <a href="https://www.munistgo.cl/santiago-ya-cuenta-con-10-zonas-recreativas-caninas/"
-                target="_blank">Aquí</a> para ver mas zonas
-
-            </div>
-
-
-            <div>   
-
-            <img class="w-50 pt-5 rounded-bottom" src="multimedia/galeria/extras/infografia-canil2.png" alt="mapa de zonas recreativas caninas">
-
+                target="_blank">Aquí</a> para ver más zonas
 
         </div>
 
-
     </aside>
+
+    <div>
+
+        <img class="w-100" src="multimedia/galeria/extras/infografia-canil2.webp"
+            alt="mapa de zonas recreativas caninas">
+
+
+    </div>
 
 
     <!-- inicia footer -->
