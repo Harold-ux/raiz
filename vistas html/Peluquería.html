@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>DogSides - Un Sevicio Selecto</title>
+
     <!-- link a favicon -->
     <link rel="shortcut icon" href="../multimedia/favicon/icons8-dog-house-24.png" type="image/x-icon">
 
@@ -21,15 +23,17 @@
 
 <body class="p-0 m-0 border-0">
 
-    <!-- inicia cabecera-->
+
+    <!-- inicia cabecera y enlaces internos -->
+
     <section>
 
-        <nav class="navbar navbar-expand-lg" id="cabecera">
+        <nav class="navbar navbar-expand-md" id="cabecera">
 
             <section>
 
                 <div class="container-fluid">
-                    <a href="../index.html"> <img src="../multimedia/logos/LogoW.webp"
+                    <a href="../index.html"><img src="../multimedia/logos/LogoW.webp"
                             alt="Cachorro sentado mirando a la derecha en la salida de una casa para perros">
                     </a>
 
@@ -38,58 +42,137 @@
                     <button id="colorH" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <img= class="navbar-toggler-icon" src="../multimedia/galeria/extras/bars-solid.svg">
+                        <img= class="navbar-toggler-icon" src="multimedia/galeria/extras/bars-solid.svg">
 
                     </button>
+
+                </div>
 
             </section>
 
             <section>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../vistas html/Tienda.html">TIENDA</a>
+                            <button class="btn"><a href="../vistas html/Tienda.html">TIENDA</a></button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Peluquería.html">PELUQUERÍA</a>
+                            <button class="btn"><a href="../vistas html/Peluquería.html">PELUQUERIA</a>
+                            </button>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas html/Reservas.html">RESERVA</a>
+                        <li>
+                            <button class="btn"><a href="../vistas html/Reservas.html">RESERVA</a>
+                            </button>
                         </li>
 
                     </ul>
-                </div>
+
                 </div>
         </nav>
 
     </section>
 
+    <!-- cierre de pestañas cabecera -->
+
     <main>
+        <h1 class="text-center mt-5">LISTA DE PRECIOS</h1>
+        <div class="container mt-5 mb-5 ">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered table-hover border-dark shadow text-center">
 
-        <section class="text-center">
+                        <thead class="text-center align-middle table-light">
 
-            <h1 >PRECIOS</h1>
+                            <tr>
 
-            <div id="h1P">
+                                <th>Peso (kg)</th>
+                                <th>Solo baño</th>
+                                <th>Baño y corte</th>
 
-            <img src="../multimedia/galeria/extras/listadeprecios.png" alt="lista de precios para cortes de pelos en perros">
+                            </tr>
+
+                        <tbody>
+
+                            <tr>
+                                <td>0.1 a 7 kg</td>
+                                <td>$15.000 </td>
+                                <td>$18.000</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>12 a 17 kg</td>
+                                <td>$17.000</td>
+                                <td>$20.000</td>
+
+                            <tr>
+                                <td>17 a 24 kg</td>
+                                <td>$20.000</td>
+                                <td>$24.000</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>24 a 30 kg</td>
+                                <td>$30.000</td>
+                                <td>$35.000</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>30 a 35 kg</td>
+                                <td>$34.000 </td>
+                                <td>$38.000</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>35 a 40 kg</td>
+                                <td>$42.000</td>
+                                <td>$49.000</td>
+
+                            </tr>
+
+                            <tr class="text-center align-middle">
+                                <th>Baño sanitario</th>
+                                <td colspan="2">$3.000</td>
+
+
+
+
+
+                            </tr>
+
+                        </tbody>
+
+                        </thead>
+
+
+                    </table>
+
+
+                </div>
 
             </div>
 
-        
-        </section>
+        </div>
 
 
     </main>
 
 
+
+    <!-- inicia footer -->
+
     <footer>
 
         <div>
+
             <a href="https://www.facebook.com/profile.php?id=100080922897263&mibextid=ZbWKwL" target="_blank">
 
                 <img src="../multimedia/footer/facebook-square-logo-24.png" alt="Síguenos en Facebook" />
@@ -99,6 +182,7 @@
         </div>
 
         <div>
+
             <a href="https://wa.me/+56949488492" target="_blank">
 
                 <img src="../multimedia/footer/whatsapp-logo-24.png" alt="Escríbenos al Whatsapp" />
@@ -108,6 +192,7 @@
         </div>
 
         <div>
+
             <a href="https://www.instagram.com/neonorton183/" target="_blank">
 
                 <img src="../multimedia/footer/instagram-alt-logo-24.png" alt="Síguenos en Instagram" />
