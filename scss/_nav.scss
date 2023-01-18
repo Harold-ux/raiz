@@ -11,25 +11,77 @@
         text-align: center;
         text-decoration: solid;
         column-gap: 10vw;
-        justify-content: space-around;     
+        justify-content: space-around;
         font-size: $sBtn;
         margin-top: 5vh;
+
         .navbar-nav.me-auto.mb-2.mb-lg-0 {
             flex-direction: row;
             justify-content: center;
-            margin-left: 1.2em;
+            margin-left: 1.2vw;
             
-                                     
-        }       
-    }   
+        }
+    }
+}
+
+.mb-2 {
+    margin-bottom: 0.5vh!important;
+}
+
+@media (max-width: 350px) {
+
+    #cabecera div ul {
+        text-align: center;
+        text-decoration: solid;
+        column-gap: 5vw;
+        justify-content: space-around;
+        font-size: xx-small;
+        margin-top: 5vh;
+        
+    }
+   
+}
+
+
+// botonera hamburguesa 
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0.5em;
+   
+}
+
+#colorH {
+    background-color: rgb(242, 242, 241)
 }
 
 a.nav-link {
-                height: 3vh;
-            
-            }            
-            a {
-                color: $colorNav;
-                text-decoration: none;
-               
-            } 
+    height: 3vh;
+
+}
+
+a {
+    color: $colorNav;
+    text-decoration: none;
+
+}
+
+// botoneras
+
+.btn {
+    background-color: $btnColor;
+    border: none;
+    padding: -2px -1px;
+    text-align: center;
+    font-size: $s1;
+    margin: 1px 1.5px;
+    transition: 0.3s;
+    .btn:hover {
+        background-color: $btnHoverColor2;
+        color: $btnHoverColor;
+    
+    }
+    
+}

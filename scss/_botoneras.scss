@@ -26,6 +26,19 @@
    
 }
 
+@media (max-width: 350px) {
+
+    .navbar-nav.me-auto.mb-2.mb-lg-0 {
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -4.5px;
+    }  
+    
+   
+}
+
+
+
 #colorH {
-    background-color: rgb(242, 242, 241)
+        background-color: rgb(242, 242, 241)
 }
