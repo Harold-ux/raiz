@@ -1,0 +1,35 @@
+// seteo nav para hacer cabecera 
+
+#cabecera {
+
+    background: $mainColor;
+    background: $cabeceraColor;
+    flex-direction: column;
+
+    div ul {
+
+        text-align: center;
+        text-decoration: solid;
+        column-gap: 10vw;
+        justify-content: space-around;     
+        font-size: $sBtn;
+        margin-top: 5vh;
+        .navbar-nav.me-auto.mb-2.mb-lg-0 {
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 1.2em;
+            
+                                     
+        }       
+    }   
+}
+
+a.nav-link {
+                height: 3vh;
+            
+            }            
+            a {
+                color: $colorNav;
+                text-decoration: none;
+               
+            } 
