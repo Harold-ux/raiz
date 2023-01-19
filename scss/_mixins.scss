@@ -1,1 +1,19 @@
+@mixin H-s ($fonts1, $paddingt1){
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: $fonts1;
+    padding-top: $paddingt1;
+    }
 
+h2 {
+
+   @include H-s(1.5em,0.8em); 
+
+}
+
+h3 {
+    
+    @include H-s(1.4em,1em);
+    
+  }
