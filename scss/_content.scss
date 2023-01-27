@@ -27,6 +27,15 @@
     }
 }
 
+// Resalto primera letra
+
+.one:first-letter{
+    font-size: x-large;
+    font-weight: 400;
+
+}
+
+
 // Resalto de párrafo en main
 
 .justify {
@@ -136,15 +145,6 @@
 
 }
 
-#dog {
-
-    padding-top: 5%;
-    margin-bottom: 0;
-    width: auto;
-    margin: auto;
-
-}
-
 // ajustes para peluquería
 
 
@@ -197,20 +197,22 @@ section h1{
     
 }
 
-@media (max-width: 350px) {
-
-    
-    #reserva{
+    @media (max-width: 350px) {
 
         
-        width: auto;
-        height: 280px;
-        margin-bottom: 5px;
+        #reserva{
+
+            
+            width: auto;
+            height: 280px;
+            margin-bottom: 5px;
 
 
+        }
+    
     }
-   
-}
+
+
 
 
 // snipet para el footer */
