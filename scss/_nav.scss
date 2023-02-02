@@ -10,7 +10,7 @@
 
         text-align: center;
         text-decoration: solid;
-        column-gap: 10vw;
+        column-gap: 1vw;
         justify-content: space-around;
         font-size: $sBtn;
         margin-top: 5vh;
@@ -18,28 +18,28 @@
         .navbar-nav.me-auto.mb-2.mb-lg-0 {
             flex-direction: row;
             justify-content: center;
-            margin-left: 1.2vw;
-            
+            margin-left: 1vw;
+
         }
     }
 }
 
 .mb-2 {
-    margin-bottom: 0.5vh!important;
+    margin-bottom: 0.5vh !important;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 321px) {
 
     #cabecera div ul {
         text-align: center;
         text-decoration: solid;
-        column-gap: 5vw;
+        column-gap: 2vw;
         justify-content: space-around;
         font-size: xx-small;
         margin-top: 5vh;
-        
+
     }
-   
+
 }
 
 
@@ -49,8 +49,8 @@
 
     flex-direction: row;
     justify-content: center;
-    margin-left: 0.5em;
-   
+    margin-left: 0em;
+
 }
 
 #colorH {
@@ -78,10 +78,30 @@ a {
     font-size: $s1;
     margin: 1px 1.5px;
     transition: 0.3s;
+
     .btn:hover {
         background-color: $btnHoverColor2;
         color: $btnHoverColor;
+
+    }
+
+}
+
+
+@media (min-width:1200px) {
+    .btn {
+        --bs-btn-padding-x: 1.8rem;
+    }
+    #cabecera div ul {
+        COLUMN-GAP: 22vw;
+    }
+    .navbar-nav.me-auto.mb-2.mb-lg-0 {
+
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0.95em;
     
     }
-    
+
 }
+

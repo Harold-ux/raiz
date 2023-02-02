@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 * {
   font-family: "Poppins", sans-serif;
@@ -11,7 +12,7 @@
 #cabecera div ul {
   text-align: center;
   text-decoration: solid;
-  column-gap: 10vw;
+  column-gap: 1vw;
   justify-content: space-around;
   font-size: small;
   margin-top: 5vh;
@@ -19,18 +20,18 @@
 #cabecera div ul .navbar-nav.me-auto.mb-2.mb-lg-0 {
   flex-direction: row;
   justify-content: center;
-  margin-left: 1.2vw;
+  margin-left: 1vw;
 }
 
 .mb-2 {
   margin-bottom: 0.5vh !important;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 321px) {
   #cabecera div ul {
     text-align: center;
     text-decoration: solid;
-    column-gap: 5vw;
+    column-gap: 2vw;
     justify-content: space-around;
     font-size: xx-small;
     margin-top: 5vh;
@@ -39,7 +40,7 @@
 .navbar-nav.me-auto.mb-2.mb-lg-0 {
   flex-direction: row;
   justify-content: center;
-  margin-left: 0.5em;
+  margin-left: 0em;
 }
 
 #colorH {
@@ -69,6 +70,19 @@ a {
   color: rgb(141, 130, 130);
 }
 
+@media (min-width: 1200px) {
+  .btn {
+    --bs-btn-padding-x: 1.8rem;
+  }
+  #cabecera div ul {
+    COLUMN-GAP: 22vw;
+  }
+  .navbar-nav.me-auto.mb-2.mb-lg-0 {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0.95em;
+  }
+}
 .text-left {
   text-align: left;
 }
@@ -159,6 +173,10 @@ iframe {
   justify-content: center;
 }
 
+span.carousel-control-next-icon {
+  color: black;
+}
+
 #media {
   align-items: center;
   background-color: rgba(167, 182, 177, 0.299);
@@ -176,7 +194,7 @@ iframe {
 }
 
 .m-auto {
-  padding: 1%;
+  padding: 1.5%;
   width: 300px;
   height: 480px;
   background-color: black;
@@ -201,6 +219,10 @@ iframe {
   line-height: 1.5em;
   font-size: x-small;
   color: beige;
+}
+
+.img {
+  --bs-gutter-x: 1.rem;
 }
 
 #tienda {
@@ -228,48 +250,19 @@ iframe {
   padding-bottom: 10%;
 }
 
-#h1P {
-  margin-top: 5%;
-  padding-bottom: 15%;
-  background-color: rgb(242, 242, 241);
+.h1P {
+  margin-top: 20vh;
+  padding-bottom: 2%;
 }
 
-section h1 {
-  margin-top: 10%;
+.colorT {
+  background-color: rgba(55, 171, 197, 0.591);
 }
 
-.reservas {
-  padding-bottom: 5%;
-  align-content: center;
-  margin-top: 5%;
+.tabla {
+  margin-bottom: 10%;
 }
 
-.bg-opacity-100 {
-  border-radius: 5%;
-  background-image: url(../multimedia/galeria/extras/45403006_eps.png);
-  margin: auto;
-}
-
-#h1R {
-  padding-bottom: 5%;
-  margin-top: 5%;
-}
-
-#reserva {
-  border-radius: 2%;
-  border: solid;
-  width: auto;
-  height: 400px;
-  margin-bottom: 5%;
-}
-
-@media (max-width: 350px) {
-  #reserva {
-    width: auto;
-    height: 280px;
-    margin-bottom: 5px;
-  }
-}
 html {
   min-height: 100%;
   width: 100%;
@@ -315,17 +308,10 @@ h3 {
   padding-top: 1em;
 }
 
-#working {
-  margin-top: 15%;
-  text-align: center;
-  padding: 0%;
-}
-
 .containerD {
   transform: scale(0.5);
-  margin-left: 1%;
+  margin-left: 10%;
   margin-top: 1%;
-  padding-bottom: 1px;
 }
 .containerD .animdog {
   left: 10%;
@@ -437,14 +423,10 @@ h3 {
   bottom: 465px;
   rotate: 45deg;
 }
-.containerD #last {
-  margin-top: -50px;
-}
 
 section.container-fluid.mt-lg-5.mt-sm-5.mb-lg-5 {
   margin-top: 45%;
   margin-bottom: 30%;
-  margin-left: 15%;
   margin-right: auto;
   width: auto;
 }
@@ -500,6 +482,169 @@ section.container-fluid.mt-lg-5.mt-sm-5.mb-lg-5 {
   100% {
     opacity: 1;
   }
+}
+#tg {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+#galería {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(23, 200px);
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 40px;
+  grid-template-areas: "fot1" "fot2" "fot3" "fot4" "fot5" "fot6" "fot7" "fot8" "fot9" "fot10" "fot11" "fot12" "fot13" "fot14" "fot15" "fot16" "fot17" "fot18" "fot19" "fot20" "fot21" "fot22" "fot23";
+}
+#galería img {
+  border-radius: 0.5%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  #galería img:hover {
+    transform: scale(1, 1.1);
+    transition: all 0.5s;
+  }
+}
+#galería .fot-1 {
+  grid-area: fot1;
+}
+#galería .fot-2 {
+  grid-area: fot2;
+}
+#galería .fot-3 {
+  grid-area: fot3;
+}
+#galería .fot-4 {
+  grid-area: fot4;
+}
+#galería .fot-5 {
+  grid-area: fot5;
+}
+#galería .fot-6 {
+  grid-area: fot6;
+}
+#galería .fot-7 {
+  grid-area: fot7;
+}
+#galería .fot-8 {
+  grid-area: fot8;
+}
+#galería .fot-9 {
+  grid-area: fot9;
+}
+#galería .fot-10 {
+  grid-area: fot10;
+}
+#galería .fot-11 {
+  grid-area: fot11;
+}
+#galería .fot-12 {
+  grid-area: fot12;
+}
+#galería .fot-13 {
+  grid-area: fot13;
+}
+#galería .fot-14 {
+  grid-area: fot14;
+}
+#galería .fot-15 {
+  grid-area: fot15;
+}
+#galería .fot-16 {
+  grid-area: fot16;
+}
+#galería .fot-17 {
+  grid-area: fot17;
+}
+#galería .fot-18 {
+  grid-area: fot18;
+}
+#galería .fot-19 {
+  grid-area: fot19;
+}
+#galería .fot-20 {
+  grid-area: fot20;
+}
+#galería .fot-21 {
+  grid-area: fot21;
+}
+#galería .fot-22 {
+  grid-area: fot22;
+}
+#galería .fot-23 {
+  grid-area: fot23;
+}
+@media (min-width: 768px) {
+  #galería {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 250px;
+    grid-template-areas: "fot1 fot2" "fot3 fot3" "fot5 fot4" "fot6 fot7" "fot8 fot9" "fot11 fot10" "fot12 fot13" "fot15 fot14" "fot16 fot17" "fot19 fot18" "fot20 fot21" "fot23 fot22";
+  }
+}
+@media (min-width: 1200px) {
+  #galería {
+    object-fit: cover;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(11, 300px);
+    grid-template-areas: "fot1 fot2 fot2" "fot3 fot2 fot2" "fot3 fot4 fot5" "fot6 fot6 fot5" "fot6 fot6 fot5" "fot6 fot6 fot10" "fot8 fot9 fot10" "fot11 fot12 fot13" "fot14 fot15 fot17" "fot16 fot23 fot22 " "fot20 fot21 fot19" "fot7 fot7 fot18";
+  }
+}
+
+.containerK {
+  display: grid;
+  height: 350px;
+  border-radius: 10%;
+  background-image: url(../multimedia/galeria/extras/Huellas.webp);
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.h1R {
+  margin-top: 15vh;
+  padding-bottom: 8%;
+}
+
+div iframe {
+  border-radius: 2%;
+  border: solid;
+  width: auto;
+  height: 300px;
+  margin-bottom: 25%;
+  padding: 0.1%;
+}
+
+@media (min-width: 740px) {
+  div iframe {
+    border-radius: 2%;
+    border: solid;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 5%;
+    padding: 0.1%;
+  }
+}
+.Reservas {
+  margin-top: 6%;
+  width: 600px;
+  height: 110vh;
+}
+
+.btn-primary {
+  --bs-btn-color: #cd3f3f;
+  margin-bottom: 10%;
+}
+
+.form-check {
+  display: inline-block;
+  min-height: 1.5rem;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+  padding-top: 1%;
 }
 
 /*# sourceMappingURL=styles.css.map */

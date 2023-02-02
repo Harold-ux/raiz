@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Error 404 en página - DogSides </title>
+    <title>DogSides - RESERVA de Horas</title>
     <!-- metas para seo  -->
     <meta name="description"
         content="Nos especializamos en el buen trato y atención de su mascota. Contamos con personal a disposición en mención pro bienestar animal para un servicio VIP">
-    <!-- metas para la busqueda -->
-    <meta name="keywords" content="peluquería canina, perros, dogsides, fotos, destacados">
-    <!-- link favicon -->
+    <meta name="keywords" content="peluquería canina, perros, RESERVA de horas" <!-- link a favicon -->
     <link rel="shortcut icon" href="../multimedia/favicon/icons8-dog-house-24.png" type="image/x-icon">
     <!-- link al css de boostrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -75,58 +73,81 @@
 
     </section>
 
-    <!-- cierre de pestañas cabecera -->
+    <h1 class="h1R text-center">RESERVA</h1>
 
-    <h1 class="container-fluid text-center mt-5"> UPPPSS... Lamentamos lo que sucedió
-        <br> <span class="parpadea text"><br>
-            <strong> Error 404 </strong> <br> Página no encontrada
+    <main class="text-center ">
 
-    </h1>
+        <section class="col containerK">
 
-    <main>
+            <div>
 
-        <section class="container-fluid mt-sm-5 mb-lg-5">
-
-            <div class="row">
-
-                <div class="col-sm-12 col-lg-3 ms-lg-2 container-fluid">
-                    <img src="../multimedia/galeria/extras/404.webp"
-                        alt="Sujeto sentado en un escritorio frenta a un cumputador con cara de histeria y preocupación sujetandose el cabello">
-
-                </div>
-
-
-                <div class="col-lg-7 containerD m-5">
-
-                    <div class="animdog">
-                        <div class="bodydog"></div>
-                        <div class="leg1"></div>
-                        <div class="leg2"></div>
-                        <div class="leg3"></div>
-                        <div class="leg4"></div>
-                        <div class="tail"></div>
-                        <div class="ear"></div>
-                        <div class="nose"></div>
-                        <div class="eye"></div>
-                        <div class="tongue"></div>
-                    </div>
-
-                    <div>
-
-                        <img src="../multimedia/galeria/extras/Casita.webp" alt="">
-
-
-                    </div>
-
-                </div>
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=4a01591299a6532fa7ee41c1fa01b58d33522b96c4fff38fbf67d2c5a92fb0ed%40group.calendar.google.com&ctz=America%2FSantiago">
+                </iframe>
 
             </div>
 
         </section>
 
+        <section class="container-fluid w-75 Reservas">
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12 m-3 w-auto">
+                        <label for="inputEmail4">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-12 m-3 w-auto">
+                        <label for="inputPassword4">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4"
+                            placeholder="Contraseña del perfil">
+                    </div>
+                </div>
+                <div class="form-group col-md-12 m-3 w-auto">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección del domicilio">
+                </div>
+                <div class="form-group col-md-12 m-3 w-auto">
+                    <label for="inputAddress2">Dirección 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Edificio, N° de casa/Dpto">
+                </div>
+                <div class="form-row m-3">
+                    <div class="form-group col-md-12 m-3 w-auto">
+                        <label for="inputCity">Región</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-8 m-3 w-auto">
+                        <label for="inputState">Comuna</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Seleccione...</option>
+                            <option>Vitacura</option>
+                            <option>Lo Barnechea</option>
+                            <option>Santiago centro</option>
+                            <option>Ñuñoa</option>
+                            <option>Huechuraba</option>
+                            <option>Chicureo</option>
+                            <option>Colina</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 m-3 w-auto mt-5">
+                    <div class="form-check">Buscar mascota
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        </label>
+                    </div>
+                </div>
+                <div class="botonR">
+                    <a button href="../vistas html/Page-404.html" type="button" class="btn btn-primary">Reservar</button>
+                    </a>
+                </div>
+            </form>
+
+
+
+        </section>
+
     </main>
-
-
 
     <footer>
 

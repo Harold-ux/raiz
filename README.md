@@ -17,7 +17,7 @@ en el siguiente enlace: https://youtu.be/gtl2ufc3_-c ) </p>
 
  <br> Al usar el sistema de grillas en combinación con box-model pude lograr dar una bienvenida con imagen y texto en cada parte de la pantalla.
 Se agregó un carousel que cuenta la historia principal. Se sumaron en modo de Aside unas Noticias con enlaces externos. 
-Mapas de ubicacion con iframes, Calendarios para reservas. 
+Mapas de ubicacion con iframes, Calendarios para RESERVAS. 
 Todo lo necesario para un empredimiento de una peluququería canina.</p>
 
 <span><br></span>  

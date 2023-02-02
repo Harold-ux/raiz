@@ -6,6 +6,7 @@
     margin: 2.5%;
     display: flex;
     flex-direction: column;
+
     div {
 
         line-height: 1.5em;
@@ -13,7 +14,7 @@
         text-align: center;
         margin: 2.5%;
         flex-basis: content;
-    
+
     }
 
 }
@@ -29,7 +30,7 @@
 
 // Resalto primera letra
 
-.one:first-letter{
+.one:first-letter {
     font-size: x-large;
     font-weight: 400;
 
@@ -46,6 +47,10 @@
 }
 
 // Ajustes carousel 
+
+span.carousel-control-next-icon {
+    color: black;
+}
 
 #media {
 
@@ -64,12 +69,12 @@
     justify-content: space-around;
     padding-top: 1.5%;
     background-color: rgb(242, 242, 241);
-    
+
 }
 
 .m-auto {
 
-    padding: 1%;
+    padding: 1.5%;
     width: 300px;
     height: 480px;
     background-color: black;
@@ -77,6 +82,7 @@
     vertical-align: middle;
 
 }
+
 
 @media (max-width: 750px) {
 
@@ -104,6 +110,12 @@
     line-height: 1.5em;
     font-size: $sXsm;
     color: beige;
+
+}
+
+.img {
+    --bs-gutter-x: 1.rem;
+
 }
 
 // ajustes para las grillas en tienda
@@ -148,72 +160,23 @@
 // ajustes para peluquería
 
 
-#h1P {
+.h1P {
 
-    margin-top: 5%;
-    padding-bottom: 15%;
-    background-color: rgb(242, 242, 241);
-
-}
-
-section h1{
-
-    margin-top: 10%;
+    margin-top: 20vh;
+    padding-bottom: 2%;
+  
 
 }
 
+.colorT{
 
-// ajustes para reservas
-
-
-.reservas {
-
-    padding-bottom: 5%;
-    align-content: center;
-    margin-top: 5%;
+    background-color: $colorTable;
 }
 
-.bg-opacity-100 {
+.tabla{
 
-    border-radius: 5%;
-    background-image: url(../multimedia/galeria/extras/45403006_eps.png);
-    margin: auto;
-    
+  margin-bottom: 10%;
 }
-
-#h1R {
-
-    padding-bottom: 5%;
-    margin-top: 5%;
-}
-
-#reserva{
-
-    border-radius: 2%; 
-    border: solid;
-    width:auto; 
-    height:400px;
-    margin-bottom:5%;
-    
-}
-
-    @media (max-width: 350px) {
-
-        
-        #reserva{
-
-            
-            width: auto;
-            height: 280px;
-            margin-bottom: 5px;
-
-
-        }
-    
-    }
-
-
-
 
 // snipet para el footer */
 
@@ -253,4 +216,3 @@ footer a :hover {
     margin-bottom: 1px;
 
 }
-

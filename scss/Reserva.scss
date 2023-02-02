@@ -1,0 +1,69 @@
+// ajustes para RESERVA
+
+.containerK {
+
+    display: grid;
+    height: 350px;
+    border-radius: 10%;
+    background-image: url(../multimedia/galeria/extras/Huellas.webp);
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+
+.h1R {
+
+    margin-top: 15vh;
+    padding-bottom: 8%;
+
+}
+
+// Selector avanzado para poder insertar breakpoints
+
+div iframe {
+
+    border-radius: 2%;
+    border: solid;
+    width: auto;
+    height: 300px;
+    margin-bottom: 25%;
+    padding: 0.1%;
+
+}
+
+@media (min-width:740px) {
+
+
+    div iframe {
+        border-radius: 2%;
+        border: solid;
+        width: 600px;
+        height: 350px;
+        margin-bottom: 5%;
+        padding: 0.1%;
+
+    }
+}
+
+.Reservas {
+
+    margin-top: 6%;
+    width: 600px;
+    height: 110vh;
+
+}
+
+.btn-primary {
+    --bs-btn-color: #cd3f3f;
+    margin-bottom: 10%;
+
+}
+
+.form-check {
+    display: inline-block;
+    min-height: 1.5rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    padding-top: 1%;
+
+}
