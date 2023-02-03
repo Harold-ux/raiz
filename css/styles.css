@@ -4,6 +4,27 @@
   font-family: "Poppins", sans-serif;
 }
 
+.font {
+  font-size: 0.9rem;
+}
+
+.form-control {
+  display: block;
+  width: 90%;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #212529;
+  background-color: #fff;
+  border: 0.5px solid #ced4da;
+  margin-left: 4vw;
+}
+
+label {
+  padding-bottom: 5%;
+}
+
 #cabecera {
   background: rgb(242, 242, 241);
   background: linear-gradient(0deg, rgb(243, 243, 243) 25%, rgb(72, 72, 75) 1%);
@@ -108,11 +129,15 @@ h1 {
 }
 
 h2 {
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   text-align: center;
   font-size: 1.5em;
   padding-top: 0.8em;
+}
+
+.hC {
+  padding: 10%;
+  margin-left: 3%;
 }
 
 h3 {
@@ -131,7 +156,9 @@ h5 {
 .mobile {
   width: auto;
   height: 100px;
-  margin-top: 1%;
+  margin-top: 5.5%;
+  font-weight: 500;
+  font-size: medium;
 }
 
 iframe {
@@ -179,27 +206,20 @@ span.carousel-control-next-icon {
 
 #media {
   align-items: center;
-  background-color: rgba(167, 182, 177, 0.299);
+  background-color: rgb(80, 98, 112);
+  width: auto;
+  height: 480px;
+  padding: 0;
 }
 
 .grid {
   display: flex;
   width: auto;
-  background-color: rgba(167, 182, 177, 0.299);
-  column-gap: 5em;
+  column-gap: 3em;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 1.5%;
-  background-color: rgb(242, 242, 241);
-}
-
-.m-auto {
-  padding: 1.5%;
-  width: 300px;
-  height: 480px;
-  background-color: black;
-  align-content: center;
-  vertical-align: middle;
+  background-color: rgb(242, 242, 240);
 }
 
 @media (max-width: 750px) {
@@ -248,19 +268,6 @@ span.carousel-control-next-icon {
 #h1 {
   margin-top: 5%;
   padding-bottom: 10%;
-}
-
-.h1P {
-  margin-top: 20vh;
-  padding-bottom: 2%;
-}
-
-.colorT {
-  background-color: rgba(55, 171, 197, 0.591);
-}
-
-.tabla {
-  margin-bottom: 10%;
 }
 
 html {
@@ -483,6 +490,10 @@ section.container-fluid.mt-lg-5.mt-sm-5.mb-lg-5 {
     opacity: 1;
   }
 }
+.casita img {
+  max-width: 100%;
+}
+
 #tg {
   text-align: center;
   margin-top: 10%;
@@ -605,8 +616,8 @@ section.container-fluid.mt-lg-5.mt-sm-5.mb-lg-5 {
 }
 
 .h1R {
-  margin-top: 15vh;
-  padding-bottom: 8%;
+  margin-top: 10vh;
+  padding-bottom: 5%;
 }
 
 div iframe {
@@ -625,18 +636,17 @@ div iframe {
     width: 600px;
     height: 350px;
     margin-bottom: 5%;
-    padding: 0.1%;
+    padding: 0%;
   }
 }
 .Reservas {
-  margin-top: 6%;
-  width: 600px;
-  height: 110vh;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 .btn-primary {
   --bs-btn-color: #cd3f3f;
-  margin-bottom: 10%;
+  margin-bottom: 16%;
 }
 
 .form-check {
@@ -645,6 +655,23 @@ div iframe {
   margin-left: 0px;
   margin-bottom: 1rem;
   padding-top: 1%;
+}
+
+.h1P {
+  margin-top: 10vh;
+  padding-bottom: 2%;
+}
+
+.colorT {
+  background-color: rgba(55, 171, 197, 0.591);
+}
+
+.tabla {
+  margin-left: 5%;
+  margin-bottom: 10%;
+  width: 90%;
+  font-size: 0.8rem;
+  padding: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

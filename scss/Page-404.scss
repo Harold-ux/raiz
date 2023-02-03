@@ -169,7 +169,7 @@
     transform: scale(0.5);
     margin-left: 10%;
     margin-top: 1%;
-    
+
 
 
 }
@@ -184,39 +184,73 @@ section.container-fluid.mt-lg-5.mt-sm-5.mb-lg-5 {
 }
 
 .text {
-    font-size:40px;
-    font-family:helvetica;
-    font-weight:bold;
-    color:#b44c4c;
-    text-transform:uppercase;
-  }
-  .parpadea {
-    
+    font-size: 40px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #b44c4c;
+    text-transform: uppercase;
+}
+
+.parpadea {
+
     animation-name: parpadeo;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  
-    -webkit-animation-name:parpadeo;
+
+    -webkit-animation-name: parpadeo;
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-  }
-  
-  @-moz-keyframes parpadeo{  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  
-  @-webkit-keyframes parpadeo {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-     100% { opacity: 1.0; }
-  }
-  
-  @keyframes parpadeo {  
-    0% { opacity: 1.0; }
-     50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.casita {
+
+    img {
+    
+        max-width: 100%;
+
+    }
+}

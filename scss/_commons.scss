@@ -38,14 +38,21 @@ h1 {
 
 h2 {
 
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     text-align: center;
     font-size: 1.5em;
     padding-top: 0.8em;
 
 
 }
+
+.hC{
+   
+    padding: 10%;
+    margin-left: 3%;
+
+}
+
 
 h3 {
 
@@ -83,7 +90,9 @@ h5 {
 
     width: auto;
     height: 100px;
-    margin-top: 1%;
+    margin-top: 5.5%;
+    font-weight: 500;
+    font-size: medium;
 }
 
 iframe {
