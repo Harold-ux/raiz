@@ -1,0 +1,112 @@
+// ajustes generales
+
+
+.text-left {
+
+    text-align: left;
+
+}
+
+.text-right {
+
+    text-align: right;
+
+}
+
+.text-center {
+
+    text-align: center;
+
+}
+
+.text-justify {
+
+    text-align: justify;
+
+}
+
+.text-bold {
+
+    font-weight: 100px;
+
+}
+
+h1 {
+    font-size: xx-large;
+
+}
+
+h2 {
+
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.8em;
+
+
+}
+
+.hC{
+   
+    padding: 10%;
+    margin-left: 3%;
+
+}
+
+
+h3 {
+
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+
+// h2 {
+
+//     @include H-s(1.5em,0.8em); 
+ 
+//  }
+ 
+//  h3 {
+     
+//      @include H-s(1.4em,1em);
+     
+//    }
+ 
+
+h5 {
+
+    padding-top: 1em;
+    padding-bottom: 0.1em;
+
+}
+
+// ajustes del mapa
+
+
+.mobile {
+
+    width: auto;
+    height: 100px;
+    margin-top: 5.5%;
+    font-weight: 500;
+    font-size: medium;
+}
+
+iframe {
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+// ajustes del aside
+
+#aside {
+
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+}

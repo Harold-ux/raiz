@@ -1,0 +1,188 @@
+// ajustes del main 
+
+.flex-container {
+
+    max-height: fit-content;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+
+    div {
+
+        line-height: 1.5em;
+        text-indent: 1em;
+        text-align: center;
+        margin: 2.5%;
+        flex-basis: content;
+
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    .flex-container {
+
+        flex-direction: row;
+
+    }
+}
+
+// Resalto primera letra
+
+.one:first-letter {
+    font-size: x-large;
+    font-weight: 400;
+
+}
+
+
+// Resalto de párrafo en main
+
+.justify {
+
+    background-color: $mainColor;
+    justify-content: center;
+
+}
+
+// Ajustes carousel 
+
+span.carousel-control-next-icon {
+    color: black;
+}
+
+#media {
+
+    align-items: center;
+    background-color: rgb(80, 98, 112);
+    width: auto;
+    height: 480px;
+    padding: 0;
+   
+
+}
+
+.grid {
+
+    display: flex;
+    width: auto;
+    column-gap: 3em;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5%;
+    background-color: rgb(242, 242, 240);
+
+}
+
+@media (max-width: 750px) {
+
+    .grid {
+
+        flex-direction: column;
+
+    }
+}
+
+.justify-items {
+
+    justify-items: center;
+
+}
+
+.align-items {
+
+    align-items: center;
+
+}
+
+#caption {
+
+    line-height: 1.5em;
+    font-size: $sXsm;
+    color: beige;
+
+}
+
+.img {
+    --bs-gutter-x: 1.rem;
+
+}
+
+// ajustes para las grillas en tienda
+
+#tienda {
+
+    font-size: x-small;
+
+}
+
+#h1 {
+
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+}
+
+#dog {
+
+    padding-top: 5%;
+    margin-bottom: 0;
+    width: auto;
+    margin: auto;
+
+}
+
+// ajustes para las grillas en tienda
+
+#tienda {
+
+    font-size: $sXsm;
+
+}
+
+#h1 {
+
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+}
+
+// snipet para el footer */
+
+
+html {
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+body {
+    margin: 0;
+
+}
+
+footer {
+
+
+    background-color: rgb(160, 158, 158);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around
+}
+
+
+footer div {
+    padding-top: 5px;
+
+}
+
+footer a :hover {
+
+    transform: scale(1.2, 1.2);
+    margin-bottom: 1px;
+
+}
